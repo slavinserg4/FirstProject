@@ -1,0 +1,23 @@
+{
+  "name": "firstproject",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "rimraf dist && tsc-watch --onSuccess \"npm run watch:server\"",
+    "watch:server": "tsx src/main.ts --watch"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "rimraf": "5.0.1",
+    "tsc-watch": "4.2.9",
+    "tsx": "3.12.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "typescript": "^5.9.3"
+  }
+}
